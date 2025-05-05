@@ -24,17 +24,17 @@
             z-index: -1000;
             background: #4285F4;
             /* fallback for old browsers */
-            background: -webkit-linear-gradient(to top, #FFFDE4, #81b1ff);
+            background: -webkit-linear-gradient(to top, white, #81b1ff);
             /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #FFFDE4, #81b1ff);
+            background: linear-gradient(to top, white, #81b1ff);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
 
-        .header {
+        header {
             font-size: 70px;
             cursor: default;
             background-color: white;
-            padding: 0px 8px 8px 8px;
+            padding: 0px 16px 8px 16px;
             margin-bottom: 8px;
         }
 
@@ -69,13 +69,13 @@
             height: 15px;
         }
 
-        .header:hover {
+        header:hover {
             .openlink {
                 opacity: 100%;
             }
         }
 
-        .header .openlink:hover {
+        header .openlink:hover {
             .stroke {
                 fill: blue;
             }
@@ -92,7 +92,7 @@
 
         p.poem {
             background-color: white;
-            padding: 8px 10px;
+            padding: 16px 16px;
             margin: 8px 0;
             font-family: "PT Sans";
         }
@@ -118,7 +118,7 @@
         }
 
         .fun-fact {
-            padding: 8px 8px;
+            padding: 8px 16px;
         }
 
         .askew:hover {
@@ -154,7 +154,7 @@
 
 <body>
     <div class="background"></div>
-    <div class="header">
+    <header>
         <span class="g">G</span>
         <span class="o1">o</span>
         <span class="o2">o</span>
@@ -175,193 +175,201 @@
                 </svg>
             </a>
         </sup>
-    </div>
-    <span style="padding: 0 8px;">
+    </header>
+    <span style="padding: 0 16px;">
         Search the world's information, including webpages, images, videos and more.
     </span>
-    <p class="poem">
-        <span class="title">Googling Through Life</span><br>
-        <br>
-        I asked you once, “Can cats eat cheese?”<br>
-        You answered fast with expert ease.<br>
-        Then down the rabbit hole I fell,<br>
-        Now I know how otters smell.<br>
-        <br>
-        I searched for “how to fix my sink,”<br>
-        You gave me ads before a link.<br>
-        Then somehow, two clicks down the line,<br>
-        I’m learning facts on porcupine.<br>
-        <br>
-        You heard me sneeze? You showed me flu.<br>
-        You spy? You swear it isn’t true…<br>
-        Yet every time I misspell stuff,<br>
-        You finish—creepily enough.<br>
-        <br>
-        Oh Google, friend that’s always near,<br>
-        Just stop with “ads for pants,” my dear.<br>
-        I only asked for pie recipes—<br>
-        Why am I shopping Japanese tees?<br>
-        <br>
-        <span class="poem-credit">Poem by
-            <a href="https://chatgpt.com/share/681823c0-2824-8012-9e1f-a6577da5d1eb" target="_blank">
-                GPT-4o
-                <sub>
-                    <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
-                        height="900.000000pt" viewBox="0 0 900.000000 900.000000" preserveAspectRatio="xMidYMid meet">
-                        <g class="stroke" fill="#000000"
-                            transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
-                            <path
-                                d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
-                            <path
-                                d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
-                        </g>
-                    </svg>
-                </sub>
-            </a>
-        </span>
-    </p>
-    <div class="fun-fact">
-        <span class="title">Fun facts about
-            <span style="background-color: white; border-radius: 5px; padding: 2px 2px;">
-                <span class="g">G</span>
-                <span class="o1">o</span>
-                <span class="o2">o</span>
-                <span class="g">g</span>
-                <span class="l">l</span>
-                <span class="e">e</span>
-            </span>
-        </span>
-        <ol>
-            <li>
-                <b style="font-family: Merriweather;">Google</b>’s original logo colors <b>(blue, red, yellow,
-                    green)</b> can be loosely associated with the
-                <b>elements in a flame test</b>,<br> which is a chemical method used to identify metal ions based on
-                the color they emit when burned:<br>
-                <ul>
-                    <li>
-                        <b
-                            style="font-family:'Merriweather'; color:#4285F4; background-color: white; border-radius: 5px; padding: 0 2px;">Blue</b>
-                        - Could be linked to <b>copper
-                            (Cu<sup>2+</sup>)</b>, which
-                        gives a blue-green
-                        flame.
-                    </li>
-                    <li>
-                        <b
-                            style="font-family:'Merriweather'; color:#EA4335; background-color: white; border-radius: 5px; padding: 0 2px;">Red</b>
-                        - <b>Strontium
-                            (Sr<sup>2+</sup>)</b> or <b>lithium
-                            (Li<sup>+</sup>)</b> produces a red flame.
-                    </li>
-                    <li>
-                        <b
-                            style="font-family:'Merriweather'; color:#FBBC05; background-color: white; border-radius: 5px; padding: 0 2px;">Yellow</b>
-                        - <b>Sodium
-                            (Na<sup>+</sup>)</b> emits a strong yellow flame.
-                    </li>
-                    <li>
-                        <b
-                            style="font-family:'Merriweather'; color:#34A853; background-color: white; border-radius: 5px; padding: 0 2px;">Green</b>
-                        - <b>Boron (in compounds)
-                        </b> or <b>barium
-                            (Ba<sup>2+</sup>)</b> gives a green flame.
-                    </li>
-                </ul>
-                <p>
-                    So, in a way, Google's colorful branding could be seen as a vibrant chemical flame test — not
-                    intentional, but a cool crossover between tech and science!
-                </p>
-            </li>
-            <li>
-                <p>
-                    The name "<b style="font-family: Merriweather;">Google</b>" is derived from the mathematical term
-                    "<b style="font-family: Merriweather;">googol</b>", which is <b>10<sup>100</sup></b> - 1 followed
-                    by 100
-                    zeros.<br>It was coined by a 9-year-old
-                    nephew of mathematician Edward Kasner.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <b style="font-family: Merriweather;">Google</b>’s first storage was built from
-                    <b>LEGO<sup>®</sup></b>.<br>In
-                    1996,
-                    Google founders Larry Page and Sergey Brin
-                    built their first server storage using LEGO bricks to house ten 4GB hard drives — totaling 40GB.
-                    Creative and nerdy!
-                </p>
-            </li>
-            <li>
-                <p>
-                    The phrase “<b style="font-family: Merriweather;">To google</b>” became a verb in 2006.<br>It can be
-                    officially found in the Oxford English Dictionary.<br><b>google </b>
-                    <i>(verb)</i> = to search for information on
-                    the internet using the Google search engine
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a class="askew" style="color:black;" target="_blank"
-                        href="https://www.google.com/search?q=askew&sca_esv=601b0517c7361365&sxsrf=AHTn8zotveu7Sz3YYBQZzFJATya-W9OB3A%3A1746421978218&ei=2kgYaLX4DMec4-EPsrru4Ao&ved=0ahUKEwi1zY7tyIuNAxVHzjgGHTKdG6wQ4dUDCBA&uact=5&oq=askew&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWFza2V3MgoQIxiABBgnGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIKEAAYgAQYFBiHAjIFEAAYgARIvwlQ0QdY0QdwAXgBkAEAmAGcAaABnAGqAQMwLjG4AQPIAQD4AQGYAgKgArcBwgIKEAAYsAMY1gQYR5gDAIgGAZAGCJIHAzEuMaAH6wWyBwMwLjG4B6gB&sclient=gws-wiz-serp">
-                        Search "<i>askew</i>" or "<i>tilt</i>" on <b style="font-family: Merriweather;">Google</b>
-                        <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
-                            height="900.000000pt" viewBox="0 0 900.000000 900.000000"
-                            preserveAspectRatio="xMidYMid meet">
-                            <g class="stroke" fill="#000000"
-                                transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
-                                <path
-                                    d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
-                                <path
-                                    d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
-                            </g>
-                        </svg>
-                    </a><br>
-                    The page actually <i>tilts slightly</i>! A cheeky nod to geometry and angles.
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a class="retro" style="color:black;" target="_blank"
-                        href="https://www.google.com/search?q=Google+in+1998&oq=Google+in+1998&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjU0OWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8">
-                        Search “Google in 1998”
-                        <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
-                            height="900.000000pt" viewBox="0 0 900.000000 900.000000"
-                            preserveAspectRatio="xMidYMid meet">
-                            <g class="stroke" fill="#000000"
-                                transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
-                                <path
-                                    d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
-                                <path
-                                    d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
-                            </g>
-                        </svg>
-                    </a><br>
-                    It takes you back to the retro version of Google’s homepage — great for tech nostalgia.
-                </p>
-            </li>
-            <li>
-                <p>There's a <b style="font-family: Merriweather;">Google</b> Easter Eggs website called
-                    <a class="elgoog-link" target="_blank" href="https://elgoog.im/">
-                        elgoog
-                        <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
-                            height="900.000000pt" viewBox="0 0 900.000000 900.000000"
-                            preserveAspectRatio="xMidYMid meet">
-                            <g class="stroke" fill="blue"
-                                transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
-                                <path
-                                    d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
-                                <path
-                                    d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
-                            </g>
-                        </svg>
+    <main>
+        <section id="poem">
+            <p class="poem">
+                <span class="title">Googling Through Life</span><br>
+                <br>
+                I asked you once, “Can cats eat cheese?”<br>
+                You answered fast with expert ease.<br>
+                Then down the rabbit hole I fell,<br>
+                Now I know how otters smell.<br>
+                <br>
+                I searched for “how to fix my sink,”<br>
+                You gave me ads before a link.<br>
+                Then somehow, two clicks down the line,<br>
+                I’m learning facts on porcupine.<br>
+                <br>
+                You heard me sneeze? You showed me flu.<br>
+                You spy? You swear it isn’t true…<br>
+                Yet every time I misspell stuff,<br>
+                You finish—creepily enough.<br>
+                <br>
+                Oh Google, friend that’s always near,<br>
+                Just stop with “ads for pants,” my dear.<br>
+                I only asked for pie recipes—<br>
+                Why am I shopping Japanese tees?<br>
+                <br>
+                <span class="poem-credit">Poem by
+                    <a href="https://chatgpt.com/share/681823c0-2824-8012-9e1f-a6577da5d1eb" target="_blank">
+                        GPT-4o
+                        <sub>
+                            <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
+                                height="900.000000pt" viewBox="0 0 900.000000 900.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g class="stroke" fill="#000000"
+                                    transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path
+                                        d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
+                                    <path
+                                        d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
+                                </g>
+                            </svg>
+                        </sub>
                     </a>
-                </p>
-            </li>
-        </ol>
-    </div>
+                </span>
+            </p>
+        </section>
+        <section class="fun-fact">
+            <span class="title">Fun facts about
+                <span style="background-color: white; border-radius: 5px; padding: 2px 2px;">
+                    <span class="g">G</span>
+                    <span class="o1">o</span>
+                    <span class="o2">o</span>
+                    <span class="g">g</span>
+                    <span class="l">l</span>
+                    <span class="e">e</span>
+                </span>
+            </span>
+            <ol>
+                <li>
+                    <b style="font-family: Merriweather;">Google</b>’s original logo colors <b>(blue, red, yellow,
+                        green)</b> can be loosely associated with the
+                    <b>elements in a flame test</b>,<br> which is a chemical method used to identify metal ions based on
+                    the color they emit when burned:<br>
+                    <ul>
+                        <li>
+                            <b
+                                style="font-family:'Merriweather'; color:#4285F4; background-color: white; border-radius: 5px; padding: 0 2px;">Blue</b>
+                            - Could be linked to <b>copper
+                                (Cu<sup>2+</sup>)</b>, which
+                            gives a blue-green
+                            flame.
+                        </li>
+                        <li>
+                            <b
+                                style="font-family:'Merriweather'; color:#EA4335; background-color: white; border-radius: 5px; padding: 0 2px;">Red</b>
+                            - <b>Strontium
+                                (Sr<sup>2+</sup>)</b> or <b>lithium
+                                (Li<sup>+</sup>)</b> produces a red flame.
+                        </li>
+                        <li>
+                            <b
+                                style="font-family:'Merriweather'; color:#FBBC05; background-color: white; border-radius: 5px; padding: 0 2px;">Yellow</b>
+                            - <b>Sodium
+                                (Na<sup>+</sup>)</b> emits a strong yellow flame.
+                        </li>
+                        <li>
+                            <b
+                                style="font-family:'Merriweather'; color:#34A853; background-color: white; border-radius: 5px; padding: 0 2px;">Green</b>
+                            - <b>Boron (in compounds)
+                            </b> or <b>barium
+                                (Ba<sup>2+</sup>)</b> gives a green flame.
+                        </li>
+                    </ul>
+                    <p>
+                        So, in a way, Google's colorful branding could be seen as a vibrant chemical flame test — not
+                        intentional, but a cool crossover between tech and science!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The name "<b style="font-family: Merriweather;">Google</b>" is derived from the mathematical
+                        term
+                        "<b style="font-family: Merriweather;">googol</b>", which is <b>10<sup>100</sup></b> - 1
+                        followed
+                        by 100
+                        zeros.<br>It was coined by a 9-year-old
+                        nephew of mathematician Edward Kasner.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b style="font-family: Merriweather;">Google</b>’s first storage was built from
+                        <b>LEGO<sup>&#174;</sup></b>.<br>In
+                        1996,
+                        Google founders Larry Page and Sergey Brin
+                        built their first server storage using LEGO bricks to house ten 4GB hard drives — totaling 40GB.
+                        Creative and nerdy!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The phrase “<b style="font-family: Merriweather;">To google</b>” became a verb in 2006.<br>It
+                        can be
+                        officially found in the Oxford English Dictionary.<br><b>google </b>
+                        <i>(verb)</i> = to search for information on
+                        the internet using the Google search engine
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a class="askew" style="color:black;" target="_blank"
+                            href="https://www.google.com/search?q=askew&sca_esv=601b0517c7361365&sxsrf=AHTn8zotveu7Sz3YYBQZzFJATya-W9OB3A%3A1746421978218&ei=2kgYaLX4DMec4-EPsrru4Ao&ved=0ahUKEwi1zY7tyIuNAxVHzjgGHTKdG6wQ4dUDCBA&uact=5&oq=askew&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWFza2V3MgoQIxiABBgnGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIKEAAYgAQYFBiHAjIFEAAYgARIvwlQ0QdY0QdwAXgBkAEAmAGcAaABnAGqAQMwLjG4AQPIAQD4AQGYAgKgArcBwgIKEAAYsAMY1gQYR5gDAIgGAZAGCJIHAzEuMaAH6wWyBwMwLjG4B6gB&sclient=gws-wiz-serp">
+                            Search "<i>askew</i>" or "<i>tilt</i>" on <b style="font-family: Merriweather;">Google</b>
+                            <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
+                                height="900.000000pt" viewBox="0 0 900.000000 900.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g class="stroke" fill="#000000"
+                                    transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path
+                                        d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
+                                    <path
+                                        d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
+                                </g>
+                            </svg>
+                        </a><br>
+                        The page actually <i>tilts slightly</i>! A cheeky nod to geometry and angles.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a class="retro" style="color:black;" target="_blank"
+                            href="https://www.google.com/search?q=Google+in+1998&oq=Google+in+1998&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjU0OWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                            Search “Google in 1998”
+                            <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
+                                height="900.000000pt" viewBox="0 0 900.000000 900.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g class="stroke" fill="#000000"
+                                    transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path
+                                        d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
+                                    <path
+                                        d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
+                                </g>
+                            </svg>
+                        </a><br>
+                        It takes you back to the retro version of Google’s homepage — great for tech nostalgia.
+                    </p>
+                </li>
+                <li>
+                    <p>There's a <b style="font-family: Merriweather;">Google</b> Easter Eggs website called
+                        <a class="elgoog-link" target="_blank" href="https://elgoog.im/">
+                            elgoog
+                            <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
+                                height="900.000000pt" viewBox="0 0 900.000000 900.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g class="stroke" fill="blue"
+                                    transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none">
+                                    <path
+                                        d="M5500 8221 c-71 -27 -103 -47 -149 -92 -147 -148 -147 -380 0 -528 47 -47 79 -66 154 -93 46 -17 101 -18 742 -18 489 0 693 -3 693 -11 0 -6 -731 -742 -1624 -1635 -894 -894 -1632 -1639 -1641 -1657 -27 -52 -55 -147 -55 -185 0 -90 60 -223 128 -283 62 -56 172 -99 250 -99 50 0 135 24 192 54 19 10 765 748 1657 1640 891 891 1626 1622 1632 1624 7 2 11 -210 13 -705 l3 -708 29 -60 c84 -175 281 -266 451 -208 78 27 155 83 195 144 75 112 70 8 70 1339 0 1187 0 1195 -21 1250 -42 112 -128 193 -244 233 -46 16 -140 17 -1240 16 -1095 -1 -1194 -2 -1235 -18z" />
+                                    <path
+                                        d="M1760 7109 c-52 -5 -113 -14 -135 -20 -22 -7 -56 -15 -75 -20 -90 -19 -247 -97 -356 -176 -33 -24 -92 -76 -130 -116 -163 -168 -256 -346 -305 -580 -18 -87 -19 -175 -19 -2267 0 -2136 0 -2179 20 -2271 11 -52 27 -116 35 -142 14 -47 90 -210 117 -252 87 -134 251 -293 373 -363 137 -77 223 -110 374 -142 92 -20 135 -20 2265 -20 2359 0 2235 -3 2401 53 107 36 129 45 193 79 349 190 562 521 592 922 14 182 13 2262 -1 2362 -16 118 -66 204 -154 264 -135 93 -295 93 -430 0 -70 -48 -123 -123 -148 -210 -7 -23 -13 -455 -16 -1245 l-6 -1210 -27 -52 c-54 -101 -116 -155 -224 -193 -58 -20 -72 -20 -2176 -20 -1878 0 -2123 2 -2165 15 -68 22 -102 42 -152 89 -54 51 -82 96 -104 165 -16 49 -17 208 -17 2170 0 2103 0 2117 20 2175 38 108 92 170 193 224 l52 27 1210 6 c787 3 1222 9 1245 16 166 48 280 197 280 363 0 187 -135 339 -327 369 -86 13 -2253 13 -2403 0z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </main>
     <hr>
     <footer style="display:flex; place-content:center; padding: 0px 0px 10px 0px;">
-        <span>5/5/2025 | A Web Development Project |
+        <span><time datetime="2025-05-05">5th May, 2025</time> | A Web Development Project |
             <a href="https://github.com/ninja-noodle/Web-Development/tree/main/Html-Semantics">Source Code
                 <svg class="openlink" xmlns="http://www.w3.org/2000/svg" version="1.0" width="900.000000pt"
                     height="900.000000pt" viewBox="0 0 900.000000 900.000000" preserveAspectRatio="xMidYMid meet">
