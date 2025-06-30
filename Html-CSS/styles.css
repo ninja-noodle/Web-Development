@@ -1,8 +1,53 @@
+h1 {
+    color: #B2D8CE;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: #5459AC underline 4px;
+    letter-spacing: 10px;
+    font-size: 50px;
+
+
+}
+
+h2 {
+    color: #B2D8CE;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: #5459AC underline 4px dotted;
+}
+
+h1,
+h2 {
+    /* left to right: decreased priority */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 button {
     color: #B69;
-    background-color: blueviolet;
+    background-color: lightpink;
 }
 
 p {
-    color: rgb(55, 65, 145);
+    text-align: center;
+    color: #B2D8CE;
+    line-height: 2;
+}
+
+hr {
+    color: #5459AC;
+}
+
+a {
+    color: #FFCC00;
+    text-decoration: #FFCC00 underline dotted;
+}
+
+label {
+    color: #B2D8CE;
+}
+
+#submit {
+    background-color: #FFCC00;
+    size: 20px;
+
 }
