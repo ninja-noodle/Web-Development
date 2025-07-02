@@ -51,3 +51,7 @@ label {
     size: 20px;
 
 }
+
+input[type="email"] {
+    background-color: aquamarine;
+}
