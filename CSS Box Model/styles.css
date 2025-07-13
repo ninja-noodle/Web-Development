@@ -1,0 +1,63 @@
+[data-theme='light'] {
+    --bg: #1B3C53;
+    --border: #456882;
+    --font: #D2C1B6;
+    --hover-bg: #163042;
+    --hover-border: #D2C1B6;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+h1,
+h2,
+p,
+i,
+b,
+li {
+    color: var(--font);
+}
+
+hr {
+    border-color: var(--border);
+}
+
+header {
+    display: flex;
+    gap: 8px;
+}
+
+#header-text:hover,
+#header-img:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--hover-border);
+}
+
+#header-text,
+#header-img,
+section {
+    padding: 0.5rem;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+}
+
+section:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--hover-border);
+}
+
+ul {
+    list-style: none;
+    padding: 5px 5px;
+}
+
+li {
+    padding: 10px 5px 0px 5px;
+    border-bottom: 2px solid var(--border);
+}
+
+img {
+    width: 10em;
+
+}
