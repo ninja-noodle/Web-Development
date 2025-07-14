@@ -73,12 +73,83 @@
         </ul>
     </section>
     <hr>
-    <section>
+    <section class="subtext">
         <h2>
-            In essence, CSS is the language that adds visual flair and design to the structure of a webpage, much like
-            adding decorations and colors to a house
+            In essence, CSS is the language that adds <span class="gradient-text">visual flair</span> and <span
+                class="gradient-text">design</span> to the structure
+            of a webpage, much like
+            adding decorations and colors to a house.
         </h2>
     </section>
+    <hr>
+    <section class="css-display">
+        <h2>CSS Display Properties</h2>
+        <div class="properties">
+            <span>Block</span><span>Inline</span><span>Inline-block</span>
+        </div>
+        <div class="block examples">
+            <h1>H1 is a block-level element.</h1>
+            <h2>H2 is also a block-level element.</h2>
+            <h3>H3 is also also a block-level element.</h3>
+            <h4>H4 is also also also a block-level element.</h4>
+            <h5>H5 is also also also also a block-level element.</h5>
+            <h6>H6 is also also also also also a block-level element.</h6>
+        </div>
+        <div class="inline examples">
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <h4>H4</h4>
+            <h5>H5</h5>
+            <h6>H6 are set to inline</h6>
+        </div>
+        <div class="inline-block examples">
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <h4>H4</h4>
+            <h5>H5</h5>
+            <h6>H6 are set to inline-block</h6>
+        </div>
+    </section>
+    <hr>
+    </hr>
+    <section class="css-units">
+        <h2>CSS Units</h2>
+        <div class="properties">
+            <span>percent %</span><span>em</span><span>rem</span>
+        </div>
+        <div class="percent examples">
+            <div class="parent">
+                <div id="child1">70% x 50%</div>
+                200px x 200px
+            </div>
+            <div class="parent">
+                <div id="child2">50% x 60%</div>
+                200px x 200px
+            </div>
+            <div class="parent">
+                <div id="child3">90% x 70%</div>
+                200px x 200px
+            </div>
+            <div class="parent">
+                <div id="child4">80% x 80%</div>
+                200px x 200px
+            </div>
+        </div>
+        <div class="em examples">
+            <article>This is a parent div with font size of 40px.
+                <span>This is a child div with font size of 20px/0.5em of the parent div's font-size
+                    element.</span>
+            </article>
+            <span class="explanation">In the child div's <b>font-size</b>, 1em = font-size of its parent element.</span>
+            <div><span>font-size: 25px | margin-right: 100px/4em | padding: 25px/1em</span></div>
+            <span class="explanation">In other properties (eg. margin, padding), 1em = its font-size.</span>
+        </div>
+    </section>
+    <footer><span>Made on Jul 13, 2025 | </span>
+        <a href="https://github.com/ninja-noodle/Web-Development/tree/main/CSS%20Box%20Model">Github Source Code</a>
+    </footer>
 </body>
 
 </html>

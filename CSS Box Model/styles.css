@@ -2,8 +2,10 @@
     --bg: #1B3C53;
     --border: #456882;
     --font: #D2C1B6;
+    --footer-text: #456882;
     --hover-bg: #163042;
     --hover-border: #D2C1B6;
+    --hover-anchor: #D2C1B6;
 }
 
 body {
@@ -60,4 +62,299 @@ li {
 img {
     width: 10em;
 
+}
+
+a,
+span {
+    text-decoration: none;
+    color: var(--footer-text)
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--hover-anchor)
+}
+
+.gradient-text {
+    color: var(--font);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.css-displa,
+.css-units {
+    vertical-align: middle;
+}
+
+.css-display h2,
+.css-units h2,
+.properties {
+    display: inline-block;
+}
+
+.properties span {
+    color: var(--font);
+    margin: 0 10px;
+    padding: 5px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    cursor: default;
+}
+
+.examples {
+    padding: 15px;
+    margin: 15px 10px 10px 10px;
+    border: 2px dashed var(--border);
+}
+
+.css-display .examples h1,
+.css-display .examples h2,
+.css-display .examples h3,
+.css-display .examples h4,
+.css-display .examples h5,
+.css-display .examples h6 {
+    background-color: var(--hover-bg);
+    color: var(--font);
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+.css-display .block h1,
+.css-display .block h2,
+.css-display .block h3,
+.css-display .block h4,
+.css-display .block h5,
+.css-display .block h6 {
+    display: block;
+}
+
+.css-display .inline h1,
+.css-display .inline h2,
+.css-display .inline h3,
+.css-display .inline h4,
+.css-display .inline h5,
+.css-display .inline h6 {
+    display: inline;
+}
+
+.css-display .inline-block h1,
+.css-display .inline-block h2,
+.css-display .inline-block h3,
+.css-display .inline-block h4,
+.css-display .inline-block h5,
+.css-display .inline-block h6 {
+    display: inline-block;
+}
+
+.css-display .inline-block h1 {
+    width: 70px;
+    height: 50px;
+}
+
+.css-display .inline-block h2 {
+    width: 50px;
+    height: 60px;
+}
+
+.css-display .inline-block h3 {
+    width: 120px;
+    height: 70px;
+}
+
+.css-display .inline-block h4 {
+    width: 45px;
+    height: 80px;
+}
+
+.css-display .inline-block h5 {
+    width: 40px;
+    height: 60px;
+}
+
+.css-display .inline-block h6 {
+    width: 100px;
+    height: 40px;
+}
+
+.css-display:hover {
+
+    .examples h1,
+    .examples h2,
+    .examples h3,
+    .examples h4,
+    .examples h5,
+    .examples h6 {
+        background-color: var(--bg);
+    }
+
+}
+
+.css-display .block h1:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .block h2:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .block h3:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .block h4:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .block h5:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .block h6:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline h1:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline h2:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline h3:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline h4:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline h5:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline h6:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline-block h1:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline-block h2:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline-block h3:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline-block h4:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline-block h5:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.css-display .inline-block h6:hover {
+    background-color: var(--font);
+    color: var(--bg);
+}
+
+.percent {
+    display: flex;
+    place-content: space-around;
+}
+
+.parent {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+}
+
+#child1 {
+    width: 70%;
+    height: 50%;
+    background-color: #D2C1B6;
+}
+
+#child2 {
+    width: 50%;
+    height: 60%;
+    background-color: #D2C1B6;
+}
+
+#child3 {
+    width: 90%;
+    height: 70%;
+    background-color: #D2C1B6;
+}
+
+#child4 {
+    width: 80%;
+    height: 80%;
+    background-color: #D2C1B6;
+}
+
+.em article {
+    color: cadetblue;
+    font-size: 40px;
+}
+
+.em article span {
+    color: #D2C1B6;
+    display: block;
+    font-size: 0.5em;
+}
+
+.explanation {
+    display: block;
+    text-align: center;
+    color: var(--font);
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 15px 0 55px 0;
+    padding: 5px;
+    border: 2px solid var(--border);
+}
+
+.em div {
+    background-color: cadetblue;
+    width: 100%;
+}
+
+.em div span {
+    display: block;
+    color: black;
+    background-color: #D2C1B6;
+    font-size: 25px;
+    margin-right: 4em;
+    padding: 1em;
+}
+
+footer {
+    margin: 10px 0 10px 0;
+    text-align: center;
 }
