@@ -1,3 +1,10 @@
+nav {
+    background-color: #B2D8CE;
+    padding: 5px 5px;
+    display: flex;
+    place-content: space-evenly;
+}
+
 h1 {
     color: #B2D8CE;
     text-align: center;
@@ -23,8 +30,13 @@ h2 {
 }
 
 button {
-    color: #B69;
-    background-color: lightpink;
+    color: darkslateblue;
+    background-color: #B2D8CE;
+    size: 20px;
+}
+
+#submit:hover {
+    background-color: #FFCC00;
 }
 
 p {
@@ -33,25 +45,50 @@ p {
     line-height: 2;
 }
 
+p::selection {
+    background-color: #FFCC00;
+    color: darkslateblue;
+}
+
+#download>a {
+    align-content: center;
+}
+
 hr {
     color: #5459AC;
 }
 
 a {
     color: #FFCC00;
-    text-decoration: #FFCC00 underline dotted;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFCC00;
+    text-decoration: #FFCC00 underline;
 }
 
 label {
-    color: #B2D8CE;
+    color: #5459AC;
 }
 
-#submit {
-    background-color: #FFCC00;
-    size: 20px;
-
+button:active {
+    background-color: #B2D8CE;
 }
 
-input[type="email"] {
-    background-color: aquamarine;
+nav input {
+    background-color: #B2D8CE;
 }
+
+nav input:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+nav input:focus {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* section.post -will only select section elements that have a class "post" */
+/* a[href$=".org"] -selects all anchor that have hrefs ending with .org"
