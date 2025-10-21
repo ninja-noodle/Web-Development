@@ -1,0 +1,36 @@
+html {
+    background-color: rgb(26, 25, 25);
+}
+
+body {
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+    border: 1px solid rgb(74, 74, 74);
+    font-family: monospace;
+    color: #fff;
+    font-size: 15px;
+}
+
+#img1 {
+    /* background-image: url("/Position\,\ Transitions\,\ Transform\,\ Background\,\ Fonts/src/bg-ferrari.png");
+    background-size: cover;
+    background-position: center; */
+    background: no-repeat url("/Position\,\ Transitions\,\ Transform\,\ Background\,\ Fonts/src/image.jpg") center/cover;
+}
+
+#gradient {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+#combined {
+    background: no-repeat url("/Position\,\ Transitions\,\ Transform\,\ Background\,\ Fonts/src/image.jpg") center/70%,
+        linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}

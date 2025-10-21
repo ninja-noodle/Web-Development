@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Box Model</title>
+    <title>Cascading Style Sheets</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -142,9 +142,40 @@
                 <span>This is a child div with font size of 20px/0.5em of the parent div's font-size
                     element.</span>
             </article>
-            <span class="explanation">In the child div's <b>font-size</b>, 1em = font-size of its parent element.</span>
-            <div><span>font-size: 25px | margin-right: 100px/4em | padding: 25px/1em</span></div>
-            <span class="explanation">In other properties (eg. margin, padding), 1em = its font-size.</span>
+            <span class="explanation" id="em-font">In the child div's <b>font-size</b>, 1em = font-size of its parent
+                element.</span>
+            <div>
+                <span>font-size: 25px | margin-right: 100px/4em | padding: 25px/1em</span>
+            </div>
+            <span class="explanation" id="em-others">In <b>other properties (eg. margin, padding)</b>, 1em = font-size
+                of its
+                element</span>
+        </div>
+        <div class="rem examples">
+            <div class="code-eg">
+                <pre><span>CSS</span>
+                    <code>
+html {
+    font-size: 18px;
+}
+
+#button1 {
+    font-size: 1rem; 
+}
+
+#button2 {
+    font-size: 2rem;
+}
+                    </code>
+                </pre>
+                <section id="output">
+                    <button id="btn1">Button 1</button>
+                    <button id="btn2">Button 2</button>
+                </section>
+            </div>
+
+            <span class="explanation">1rem = font-size of the root element (<b>html</b> tag)</span>
+
         </div>
     </section>
     <footer><span>Made on Jul 13, 2025 | </span>

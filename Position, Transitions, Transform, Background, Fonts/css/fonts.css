@@ -1,0 +1,213 @@
+html {
+    background-color: #40394A;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #1C1427;
+    padding: 20px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+nav span {
+    display: inline-block;
+    color: #CCFFBD;
+    cursor: default;
+    background-color: transparent;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 5px;
+    transform: skew(-1deg);
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+nav span::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #CCFFBD;
+    transition: 0.3s;
+}
+
+nav span:hover::after {
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #CCFFBD;
+    border: 1px solid #CCFFBD;
+    font-size: 1.2rem;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #CCFFBD;
+    color: #40394A;
+    transform: scale(1.1);
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+main span {
+    color: #7ECA9C;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: #1C1427;
+    color: #40394A;
+    padding: 30px;
+    border-radius: 8px;
+    opacity: 50%;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.container::selection {
+    background-color: #7ECA9C;
+    color: #1C1427;
+}
+
+.container a {
+    display: block;
+    width: fit-content;
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #40394A;
+    transition: color 0.3s ease;
+}
+
+.container a::selection {
+    background-color: #CCFFBD;
+    color: #40394A;
+}
+
+
+.container a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #CCFFBD;
+    transition: 0.3s;
+}
+
+.container a:hover::after {
+    width: 100%;
+}
+
+.container:hover {
+    opacity: 100%;
+    background-color: #1C1427;
+    color: #7ECA9C;
+
+    a {
+        color: #CCFFBD;
+    }
+}
+
+.container:nth-of-type(1) {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(2) {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(3) {
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(4) {
+    font-family: "Train One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(5) {
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(6) {
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 1.5rem;
+}
+
+.container:nth-of-type(7) {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #1C1427;
+    color: #7ECA9C;
+    padding: 15px;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer a {
+    color: #7ECA9C;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #CCFFBD;
+    text-decoration: underline;
+}

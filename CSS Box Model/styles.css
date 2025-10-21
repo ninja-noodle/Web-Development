@@ -8,6 +8,10 @@
     --hover-anchor: #D2C1B6;
 }
 
+html {
+    font-size: 18px;
+}
+
 body {
     background-color: var(--bg);
 }
@@ -83,7 +87,7 @@ a:hover {
     color: transparent;
 }
 
-.css-displa,
+.css-display,
 .css-units {
     vertical-align: middle;
 }
@@ -287,32 +291,32 @@ a:hover {
     place-content: space-around;
 }
 
-.parent {
+.css-units .parent {
     display: inline-block;
     width: 200px;
     height: 200px;
     background-color: cadetblue;
 }
 
-#child1 {
+.css-units #child1 {
     width: 70%;
     height: 50%;
     background-color: #D2C1B6;
 }
 
-#child2 {
+.css-units #child2 {
     width: 50%;
     height: 60%;
     background-color: #D2C1B6;
 }
 
-#child3 {
+.css-units #child3 {
     width: 90%;
     height: 70%;
     background-color: #D2C1B6;
 }
 
-#child4 {
+.css-units #child4 {
     width: 80%;
     height: 80%;
     background-color: #D2C1B6;
@@ -335,9 +339,13 @@ a:hover {
     color: var(--font);
     border-radius: 20px;
     font-size: 20px;
-    margin: 15px 0 55px 0;
+    margin: 15px 0 0 0;
     padding: 5px;
     border: 2px solid var(--border);
+}
+
+.em #em-font {
+    margin-bottom: 55px;
 }
 
 .em div {
@@ -352,6 +360,38 @@ a:hover {
     font-size: 25px;
     margin-right: 4em;
     padding: 1em;
+}
+
+.rem .code-eg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.rem .code-eg pre {
+    margin: 0
+}
+
+.rem .code-eg pre code {
+    color: var(--font);
+    font-size: 20px;
+}
+
+.rem .code-eg #output {
+    align-content: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.rem .code-eg #output button {
+    padding: 10px;
+}
+
+.rem .code-eg #output #btn1 {
+    font-size: 1rem;
+}
+
+.rem .code-eg #output #btn2 {
+    font-size: 2rem;
 }
 
 footer {

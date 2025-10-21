@@ -1,0 +1,60 @@
+html {
+    background-color: #222831;
+}
+
+.container {
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 50px;
+}
+
+.container button {
+    display: block;
+}
+
+
+/* button 1 */
+.container div:nth-of-type(1) button:nth-of-type(1) {
+    width: 160px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #9290C3;
+    color: #222831;
+    border: 0px solid #9290C3;
+    border-radius: 4px;
+    transform:
+        rotate3d(0, 0, 0, 0deg);
+    transform-origin: center;
+    transition: transform 0.4s ease,
+        border 0.4s ease,
+        background-color 0.8s ease,
+        box-shadow 0.6s ease,
+        color 0.4s ease;
+}
+
+.container div:nth-of-type(1) button:nth-of-type(1):hover {
+    background-color: #222831;
+    border-top: 2px solid #9290C3;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 2px solid #9290C3;
+    box-shadow: 0.8rem 0.8rem 0rem rgb(146, 144, 195);
+    color: #9290C3;
+    transform:
+        rotate3d(-8, 5, 5, 50deg) scale(1.2) translateY(-5px);
+}
+
+.container div:nth-of-type(1) button:nth-of-type(1):active {
+    transform:
+        rotate3d(-8, 5, 5, 50deg) scale(1.2) translateZ(20px);
+    box-shadow: 0rem 0rem 0rem rgb(146, 144, 195);
+}
+
+/* =========== */
