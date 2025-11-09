@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <h1>Flexbox</h1>
+    <div id="header">
+        <h1>Flexbox</h1>
+        <img src="flex diagram.png" alt="flex diagram">
+    </div>
     <section class="container">
         <span><b>flex-direction</b>: row|row-reverse|column|column-reverse</span>
         <section style="display:flex; flex-direction: row-reverse;">
@@ -26,12 +29,56 @@
     </section>
     <section class="container">
         <span><b>justify-content</b>: flex-start|flex-end|center|space-between|space-around|space-evenly</span>
-        <section style="display:flex; justify-content: space-between;">
+        <section style="display:flex; flex-direction: row; justify-content: space-between;">
             <div style="background-color: #2F4858;"></div>
             <div style="background-color: #33658A;"></div>
             <div style="background-color: #86BBD8;"></div>
             <div style="background-color: #F6AE2D;"></div>
             <div style="background-color: #F26419;"></div>
+        </section>
+    </section>
+    <section class="container">
+        <span><b>flex-wrap</b>: wrap|wrap-reversed|nowrap</span>
+        <section
+            style="width: 250px; display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+            <div style="background-color: #2F4858;"></div>
+            <div style="background-color: #33658A;"></div>
+            <div style="background-color: #86BBD8;"></div>
+            <div style="background-color: #F6AE2D;"></div>
+            <div style="background-color: #F26419;"></div>
+        </section>
+    </section>
+    <section class="container">
+        <span><b>align-items</b>: flex-start|flex-end|center|baseline</span>
+        <section
+            style="height: 200px; display:flex; flex-direction: column; flex-wrap: wrap; align-items: center; justify-content: center;">
+            <div style="background-color: #2F4858;"></div>
+            <div style="background-color: #33658A;"></div>
+            <div style="background-color: #86BBD8;"></div>
+            <div style="background-color: #F6AE2D;"></div>
+            <div style="background-color: #F26419;"></div>
+        </section>
+    </section>
+    <section class="container">
+        <span><b>align-content</b>: flex-start|flex-end|center|space-between|space-around|space-evenly</span>
+        <section
+            style="height: 200px; display:flex; flex-direction: column; flex-wrap: wrap; align-items: center; justify-content: center; align-content: center">
+            <div style="background-color: #2F4858;"></div>
+            <div style="background-color: #33658A;"></div>
+            <div style="background-color: #86BBD8;"></div>
+            <div style="background-color: #F6AE2D;"></div>
+            <div style="background-color: #F26419;"></div>
+        </section>
+    </section>
+    <section class="container">
+        <span><b>align-self</b>: flex-start|flex-end|center</span>
+        <section
+            style="height: 200px; display:flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; justify-content: center;">
+            <div style="background-color: #2F4858; align-self: center;"></div>
+            <div style="background-color: #33658A; align-self: flex-end;"></div>
+            <div style="background-color: #86BBD8; align-self: center;"></div>
+            <div style="background-color: #F6AE2D;"></div>
+            <div style="background-color: #F26419; align-self: center;"></div>
         </section>
     </section>
 </body>
